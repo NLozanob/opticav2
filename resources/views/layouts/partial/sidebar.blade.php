@@ -1,15 +1,15 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #45474B">
+<aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #164863">
         <!-- Brand Logo -->
         <a href="#" class="brand-link text-center">
-            <img src="{{asset('backend/dist/img/Parking.png')}}" alt="" class="brand-image img-circle elevation-3" style="opacity: .6">
+            <img src="{{asset('backend/dist/img/optica.png')}}" alt="" class="brand-image img-circle elevation-3" style="opacity: .7">
             <span class="brand-text font-weight-light">Optica A+</span>
         </a>
 
         <!-- Sidebar -->
-        <div class="sidebar">
+        <div class="sidebar" >
             <!-- Sidebar user panel (optional) -->
             <!-- SidebarSearch Form -->
-            <div class="form-inline">
+            <div class="form-inline" style="background-color: #164863">
                 <div class="input-group" data-widget="sidebar-search">
                     <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
                     <div class="input-group-append">

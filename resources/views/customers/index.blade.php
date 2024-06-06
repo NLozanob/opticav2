@@ -4,7 +4,7 @@
 
 @section('content')
 
-<div class="content-wrapper" style="background-color: #F5F7F8">
+<div class="content-wrapper" style="background-color: #DDF2FD">
     <section class="content-header">
 		<div class="container-fluid">
 		</div>
@@ -14,12 +14,12 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="card">
-						<div class="card-header" style="font-size: 1.75rem;font-weight: 500; line-height: 1.2; margin-bottom: 0.5rem; background-color: #495E57;">
+						<div class="card-header" style="font-size: 1.75rem;font-weight: 500; line-height: 1.2; margin-bottom: 0.5rem; background-color: #427D9D;">
 							@yield('title')
-								<a href="{{ route('customers.create') }}" class="btn btn-primary float-right" title="Create"><i class="fas fa-plus nav-icon"></i></a>
+								<a href="{{ route('customers.create') }}" class="btn float-right" style="background-color: #9BBEC8" title="Create"><i class="fas fa-plus nav-icon"></i></a>
 						</div>
 						<div class="card-body">
-							<table id="example1" class="table table-bordered table-hover" style="width:100%">
+							<table id="example1" class="table table-bordered table-hover" style="width:100%" >
 								<thead class="text-primary">
 								    <tr>
 										<th width="10px">ID</th>
@@ -41,7 +41,7 @@
 										<td>{{ $customer -> phone_number}}</td>
                     					<td>{{ $customer -> address}}</td>
                               <td>
-                                <a href="{{ route('customers.edit',$customer->id) }}" class="btn btn-info btn-sm" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                                <a href="{{ route('customers.edit',$customer->id) }}" class="btn btn-sm" style="background-color: #9BBEC8" title="Edit"><i class="fas fa-pencil-alt"></i></a>
                                 <form class="d-inline delete-form" action="{{ route('customers.destroy', $customer) }}"  method="POST">
                                   @csrf
                                   @method('DELETE')
